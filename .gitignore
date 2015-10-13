@@ -1,4 +1,4 @@
-/resources/public/js/compiled/**
+resources/public/js/compiled/**
 figwheel_server.log
 pom.xml
 *jar
@@ -11,4 +11,4 @@ pom.xml
 .lein-plugins/
 .repl
 .nrepl-port
-/resources/public/bin/sample.mp4
+resources/public/bin/sample.mp4
