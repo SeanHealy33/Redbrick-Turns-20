@@ -1,25 +1,48 @@
 (ns ^:figwheel-always redbrick-20.core
-    (:require
-              [reagent.core :as reagent :refer [atom]]
-              [redbrick-20.views.home :as home]))
+  (:require-macros [secretary.core :refer [defroute]])
+      (:import goog.History)
+      (:require [secretary.core :as secretary]
+                [goog.events :as events]
+                [goog.history.EventType :as EventType]
+                [reagent.core :as reagent]
+                [redbrick-20.views.home :as home]
+                [redbrick-20.views.timeline :as timeline]
+                ))
 
-(enable-console-print!)
+(def app-state (reagent/atom {}))
 
-(println "Edits to this text should show up in your developer console.")
+(defn hook-browser-navigation! []
+  (doto (History.)
+    (events/listen
+     EventType/NAVIGATE
+     (fn [event]
+       (secretary/dispatch! (.-token event))))
+    (.setEnabled true)))
 
-;; define your app data so that it doesn't get over-written on reload
+(defn app-routes []
+  (secretary/set-config! :prefix "#")
 
-(defonce app-state (atom {}))
+  (defroute "/" []
+    (swap! app-state assoc :page :home))
+
+  (defroute "/timeline" []
+    (swap! app-state assoc :page :timeline))
+
+  (hook-browser-navigation!))
+
 
 (defn hello-world []
   [home/render-page])
 
-(reagent/render-component [hello-world]
-                          (. js/document (getElementById "app")))
+(defmulti current-page #(@app-state :page))
+(defmethod current-page :home []
+  [home/render-page])
+(defmethod current-page :timeline []
+  [timeline/render-page])
 
+(defmethod current-page :default [])
 
-(defn on-js-reload []
-  ;; optionally touch your app-state to force rerendering depending on
-  ;; your application
-  ;; (swap! app-state update-in [:__figwheel_counter] inc)
-)
+(defn ^:export main []
+  (app-routes)
+  (reagent/render [current-page]
+                  (.getElementById js/document "app")))

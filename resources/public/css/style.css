@@ -14,22 +14,22 @@ a {
   text-decoration: none;
 }
 
+.mdl-layout__content{
+  padding: 0;
+  margin: 0;
+}
+
 .video_wrapper.mdl-card{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
-  margin-top: 30px;
   text-align: center;
   vertical-align: middle;
-  background-image: url("http://www.powerpointtemplatefree.com/uploads/soft/Background/Birthday/Balloon%20Birthday%20background%201600x1200.jpg");
+  background-image: url("http://blog.cameronleger.com/wp-content/uploads/2010/01/balloons.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   font-weight: bold;
 }
-
 .appear{
-
   font-weight: bold;
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadein 2.5s; /* Firefox < 16 */

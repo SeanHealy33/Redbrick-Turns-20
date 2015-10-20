@@ -1,4 +1,4 @@
-(ns redbrick.views.data
+(ns redbrick-20.components.data
     (:require [reagent.core :as reagent]))
 
 (def supporting-deails (reagent/atom {
