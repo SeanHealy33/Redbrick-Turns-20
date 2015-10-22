@@ -1,10 +1,10 @@
-# redbrick-20
+# Redbrick-20
 
-FIXME: Write a one-line description of your library/project.
+A site for Redbricks 20th birthday written in closure
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+To have a kick ass 20th birthday site for Redbricks birthday on the 9th of april 2016
 
 ## Setup
 
@@ -34,6 +34,24 @@ get live reloading, nor a REPL.
 
 ## License
 
-Copyright © 2014 FIXME
+The MIT License (MIT)
 
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+Copyright (c) 2016 redbrick
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
