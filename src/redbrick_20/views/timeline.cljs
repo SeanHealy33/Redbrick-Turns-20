@@ -12,7 +12,7 @@
 (defn timeline-row [atom-state]
   [:div
     [:div {:class "year mdl-card__supporting-text"}
-      [:h4 {:class "year"} (:year atom-state)]
+      [:h4 {:class "mdl-color-text--red"} (:year atom-state)]
         [:div {:class "card_content"}
           [:img {:src (str (:supporting-image atom-state))}]
           [:div {:class "text_block"}
@@ -23,7 +23,7 @@
   [:div {:class "redbrick_timeline"}
     [:div {:class "fill-card mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"}
       [:div {:class "mdl-card__title"}
-        [:h2 {:class "mdl-card__title-text"} "Redbrick Through the Years"]]
+        [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "Redbrick Through the Years"]]
       (for [year @data/timeline]
             [timeline-row year])]])
 

@@ -7,7 +7,7 @@
                 [reagent.core :as reagent]
                 [redbrick-20.views.home :as home]
                 [redbrick-20.views.timeline :as timeline]
-                ))
+                [redbrick-20.views.cian :as cian]))
 
 (def app-state (reagent/atom {}))
 
@@ -27,7 +27,6 @@
 
   (defroute "/timeline" []
     (swap! app-state assoc :page :timeline))
-
   (hook-browser-navigation!))
 
 
@@ -39,7 +38,6 @@
   [home/render-page])
 (defmethod current-page :timeline []
   [timeline/render-page])
-
 (defmethod current-page :default [])
 
 (defn ^:export main []

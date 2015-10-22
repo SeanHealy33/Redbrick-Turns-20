@@ -14,9 +14,17 @@ a {
   text-decoration: none;
 }
 
+.header.mdl-layout__header{
+  background-color: #d50000;
+}
+
 .mdl-layout__content{
   padding: 0;
   margin: 0;
+}
+
+.mdl-layout-title{
+  color: rgb(255, 255, 255);
 }
 
 .video_wrapper.mdl-card{
@@ -29,6 +37,7 @@ a {
   background-position: center;
   font-weight: bold;
 }
+
 .appear{
   font-weight: bold;
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -42,18 +51,18 @@ a {
   margin: 0;
   margin: 5px;
   font-weight: bold;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-       -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-           animation: fadein 2s;
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 5s; /* Firefox < 16 */
+       -ms-animation: fadein 5s; /* Internet Explorer */
+        -o-animation: fadein 5s; /* Opera < 12.1 */
+           animation: fadein 5s;
 }
 
 .padder{
   padding: 15px;
 }
 
-video {
+video.mdl-card {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -61,7 +70,6 @@ video {
 
 .card-text.mdl-card__supporting-text pre {
   color: #000000;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
 }
 
@@ -74,11 +82,6 @@ video {
   display: inline;
   width: 75%;
   margin-right: 10px;
-}
-
-.year {
-  color: #d22323;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .content {
@@ -121,7 +124,7 @@ video {
     to   { opacity: 1; }
 }
 
-@media screen and (max-width: 480px) {
-  img{
+@media screen and (max-width: 570px) {
+  header img{
     display:none;
   }
