@@ -13,7 +13,7 @@
   [:div {:class "video_wrapper mdl-card mdl-shadow--6dp"}
     [:h1 {:class "appear mdl-color-text--red-800"} "Redbrick Turns 20!"]
     [:h3 {:class "appear-slow mdl-color-text--red-800"} "Happy Birthday"]
-    [:video {:class "video mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"
+    [:video {:class "video mdl-card mdl-shadow--6dp mdl-card mdl-shadow--6dp"
              :controls true
              :poster "https://cdn1.vox-cdn.com/thumbor/7yxbql5SKYznNoUC2EifHsJRyJk=/0x24:1000x587/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/38785712/video_shot_placeholder.0.png"}
       [:source {:type "video/mp4", :src "bin/sample.mp4"}]]
