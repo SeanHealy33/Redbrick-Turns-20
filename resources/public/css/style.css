@@ -14,6 +14,7 @@ a {
   color: #FFFFFF;
   text-decoration: none;
 }
+
 header img{
   background-color: #FFFFFF;
   border-radius: 25%;
@@ -38,28 +39,26 @@ header img{
   margin-right: auto;
   text-align: center;
   vertical-align: middle;
-  background-image: url("/bin/images/WebBG.png");
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.redbrick.dcu.ie/~space/public/bin/images/WebBG.png");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
 }
 
 .appear{
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2.5s; /* Firefox < 16 */
-       -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -moz-animation: fadein 2.5s; /* Firefox < 16 */
+      -ms-animation: fadein 2.5s; /* Internet Explorer */
         -o-animation: fadein 2.5s; /* Opera < 12.1 */
-           animation: fadein 2.5s;
+         animation: fadein 2.5s;
 }
 
 .appear-slow{
-  margin: 0;
-  margin: 5px;
   -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 3.5s; /* Firefox < 16 */
-       -ms-animation: fadein 3.5s; /* Internet Explorer */
-        -o-animation: fadein 3.5s; /* Opera < 12.1 */
-           animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox < 16 */
+     -ms-animation: fadein 3.5s; /* Internet Explorer */
+      -o-animation: fadein 3.5s; /* Opera < 12.1 */
+       animation: fadein 3.5s;
 }
 
 .padder{

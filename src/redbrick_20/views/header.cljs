@@ -6,7 +6,7 @@
    [:div {:class "mdl-layout__header-row"}
     [:a {:href "#/" }
       [:span  {:class "mdl-layout-title isSmall"}
-       [:img {:src "/bin/images/logoHeader.png"
+       [:img {:src "bin/images/logoHeader.png"
               :style {:width "50px" :height "50px"}}]
         title]]
         [:div {:class "mdl-layout-spacer"}]
