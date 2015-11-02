@@ -156,7 +156,7 @@
   }
   {
     :year 2015
-    :supporting-data "Hello world"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-data "REDBRICK 20"
+    :supporting-image "bin/images/logo.png"
   }
   ])

@@ -34,13 +34,13 @@ a {
   margin-right: auto;
   text-align: center;
   vertical-align: middle;
-  background-image: url("http://blog.cameronleger.com/wp-content/uploads/2010/01/balloons.jpg");
+  background-image: url("/bin/images/WebBG.png");
   background-position: center;
-  font-weight: bold;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
 }
 
 .appear{
-  font-weight: bold;
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadein 2.5s; /* Firefox < 16 */
        -ms-animation: fadein 2.5s; /* Internet Explorer */
@@ -51,12 +51,11 @@ a {
 .appear-slow{
   margin: 0;
   margin: 5px;
-  font-weight: bold;
-  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 5s; /* Firefox < 16 */
-       -ms-animation: fadein 5s; /* Internet Explorer */
-        -o-animation: fadein 5s; /* Opera < 12.1 */
-           animation: fadein 5s;
+  -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 3.5s; /* Firefox < 16 */
+       -ms-animation: fadein 3.5s; /* Internet Explorer */
+        -o-animation: fadein 3.5s; /* Opera < 12.1 */
+           animation: fadein 3.5s;
 }
 
 .padder{
@@ -64,7 +63,7 @@ a {
 }
 
 video.mdl-card {
-  width: 75%;
+  width: 70%;
   outline: 0;
   margin-left: auto;
   margin-right: auto;
@@ -130,4 +129,14 @@ video.mdl-card {
 @media screen and (max-width: 570px) {
   header img{
     display:none;
+  }
+
+  header.isSmall {
+    display: none
+  }
+
+  .content {
+    width: 80%;
+    margin-right:auto;
+    margin-left: auto;
   }

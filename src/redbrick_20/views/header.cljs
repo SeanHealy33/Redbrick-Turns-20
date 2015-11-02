@@ -1,14 +1,18 @@
 (ns redbrick-20.views.header
     (:require [reagent.core :as reagent]))
 
+(def browser-width (reagent/atom js/window.innerWidth))
+
 (defn render-header []
   [:header {:class "mdl-layout__header mdl-color--primary-dark"}
    [:div {:class "mdl-layout__header-row"}
     [:a {:href "#/" }
-      [:span  {:class "mdl-layout-title"}
-       [:img {:src "https://www.redbrick.dcu.ie/includes/images/logo-foot.png"
+      [:span  {:class "mdl-layout-title isSmall"}
+       [:img {:src "/bin/images/logoHeader.png"
               :style {:width "50px" :height "50px"}}]
-        " Redbrick DCU's Networking Society"]]
+        (if (< 500 @browser-width)
+          "Redbrick: Dcu's Networking Society"
+          "Redbrick 20")]]
         [:div {:class "mdl-layout-spacer"}]
          [:nav {:class "mdl-navigation"}
            [:a {:class "mdl-navigation__link" :href "#/timeline"} "Timeline"]]]])

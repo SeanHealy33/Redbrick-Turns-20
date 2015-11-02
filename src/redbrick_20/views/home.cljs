@@ -8,12 +8,15 @@
 (enable-console-print!)
 
 (def years-atom (reagent/atom {}))
+(def browser-width (reagent/atom js/window.innerWidth))
+
 
 (defn video-card []
+  (println @browser-width)
   [:div {:class "video_wrapper mdl-card mdl-shadow--6dp"}
     [:h1 {:class "appear mdl-color-text--red-800"} "Redbrick Turns 20!"]
     [:h3 {:class "appear-slow mdl-color-text--red-800"} "Happy Birthday"]
-    [:video {:class "video mdl-card mdl-shadow--6dp mdl-card mdl-shadow--6dp"
+    #_[:video {:class "video mdl-card mdl-shadow--6dp mdl-card mdl-shadow--6dp"
              :controls true
              :poster "https://cdn1.vox-cdn.com/thumbor/7yxbql5SKYznNoUC2EifHsJRyJk=/0x24:1000x587/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/38785712/video_shot_placeholder.0.png"}
       [:source {:type "video/mp4", :src "bin/sample.mp4"}]]
@@ -31,16 +34,16 @@
     [:div {:class "mdl-card__title"}
       [:h2 {:class "mdl-card__title-text"} (:event-title @data/event-details)]]
     [:div {:class "card-text mdl-card__supporting-text"}
-     [:pre (:event-information @data/event-details)]]])
+     [:p (:event-information @data/event-details)]]])
 
 (defn render-content-wrapper []
   [:div
     [video-card]
     [:div {:class "padder"}]
     [:div {:class "content"}
-      [supporting-card]
+      [event-card]
       [:div {:class "padder"}]
-      [event-card]]])
+      [supporting-card]]])
 
 (defn render-page []
   [:div {:class "mdl-layout mdl-js-layout mdl-layout--fixed-header"}
