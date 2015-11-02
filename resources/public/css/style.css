@@ -14,6 +14,10 @@ a {
   color: #FFFFFF;
   text-decoration: none;
 }
+header img{
+  background-color: #FFFFFF;
+  border-radius: 25%;
+}
 
 .header.mdl-layout__header{
   background-color: #d50000;
