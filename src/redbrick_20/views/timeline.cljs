@@ -8,6 +8,8 @@
 (enable-console-print!)
 
 (def years-atom (reagent/atom {}))
+(def browser-width (reagent/atom js/window.innerWidth))
+
 
 (defn timeline-row [atom-state]
   [:div
