@@ -41,7 +41,6 @@ header img{
   vertical-align: middle;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.redbrick.dcu.ie/~space/public/bin/images/WebBG.png");
   background-position: bottom;
-  background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
 }
 
@@ -89,7 +88,7 @@ video.mdl-card {
 }
 
 .content {
-  width: 60%;
+  width: 65%;
   margin-right:auto;
   margin-left: auto;
 }
@@ -129,17 +128,23 @@ video.mdl-card {
     to   { opacity: 1; }
 }
 
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 75%;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 570px) {
   header img{
     display:none;
   }
 
-  header.isSmall {
-    display: none
-  }
-
   .content {
-    width: 80%;
+    width: 90%;
     margin-right:auto;
     margin-left: auto;
   }
+}
