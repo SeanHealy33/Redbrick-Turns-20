@@ -36,7 +36,10 @@
 
 (defn render-page []
   [:div {:class "mdl-layout mdl-js-layout mdl-layout--fixed-header"}
-    [header/render-header]
+  [header/render-header
+    (if (< 570 @browser-width)
+      "Redbrick: DCU's Networking Society"
+      "Redbrick")]
    [:main {:class "mdl-layout__content"}
     (render-content-wrapper)
     [:div {:class "padder"}]]])
