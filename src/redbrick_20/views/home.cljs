@@ -10,7 +10,6 @@
 (def years-atom (reagent/atom {}))
 (def browser-width (reagent/atom js/window.innerWidth))
 
-
 (defn video-card []
   (println @browser-width)
   [:div {:class "video_wrapper mdl-card mdl-shadow--6dp"}

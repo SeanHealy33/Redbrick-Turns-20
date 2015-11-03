@@ -39,7 +39,8 @@ header img{
   margin-right: auto;
   text-align: center;
   vertical-align: middle;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.redbrick.dcu.ie/~space/public/bin/images/WebBG.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("https://www.redbrick.dcu.ie/~space/public/bin/images/WebBG.jpg");
   background-position: bottom;
   background-color: rgb(255, 255, 255);
 }
