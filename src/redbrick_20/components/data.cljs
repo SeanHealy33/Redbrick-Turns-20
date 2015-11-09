@@ -14,7 +14,7 @@
   :event-title "Event Details"
   :maps-location "TODO"
   :event-location "TBA"
-  :event-date "TBA"
+  :event-date "9th of April"
   :event-information "TBA"}))
 
 
