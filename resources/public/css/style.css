@@ -10,8 +10,18 @@ img {
 }
 
 a {
+  outline: 0;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+header img{
+  background-color: #FFFFFF;
+  border-radius: 25%;
+}
+
+.header.mdl-layout__header{
+  background-color: #d50000;
 }
 
 .mdl-layout__content{
@@ -19,49 +29,52 @@ a {
   margin: 0;
 }
 
+.mdl-layout-title{
+  color: rgb(255, 255, 255);
+}
+
 .video_wrapper.mdl-card{
   width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   vertical-align: middle;
-  background-image: url("http://blog.cameronleger.com/wp-content/uploads/2010/01/balloons.jpg");
-  background-position: center;
-  font-weight: bold;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("https://www.redbrick.dcu.ie/~space/public/bin/images/WebBG.jpg");
+  background-position: bottom;
+  background-color: rgb(255, 255, 255);
 }
+
 .appear{
-  font-weight: bold;
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2.5s; /* Firefox < 16 */
-       -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -moz-animation: fadein 2.5s; /* Firefox < 16 */
+      -ms-animation: fadein 2.5s; /* Internet Explorer */
         -o-animation: fadein 2.5s; /* Opera < 12.1 */
-           animation: fadein 2.5s;
+         animation: fadein 2.5s;
 }
 
 .appear-slow{
-  margin: 0;
-  margin: 5px;
-  font-weight: bold;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-       -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-           animation: fadein 2s;
+  -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3.5s; /* Firefox < 16 */
+     -ms-animation: fadein 3.5s; /* Internet Explorer */
+      -o-animation: fadein 3.5s; /* Opera < 12.1 */
+       animation: fadein 3.5s;
 }
 
 .padder{
   padding: 15px;
 }
 
-video {
-  width: 75%;
+video.mdl-card {
+  width: 70%;
+  outline: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .card-text.mdl-card__supporting-text pre {
   color: #000000;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
 }
 
@@ -76,13 +89,8 @@ video {
   margin-right: 10px;
 }
 
-.year {
-  color: #d22323;
-  font-family: 'Ubuntu', sans-serif;
-}
-
 .content {
-  width: 60%;
+  width: 65%;
   margin-right:auto;
   margin-left: auto;
 }
@@ -91,6 +99,7 @@ video {
   height: 100%;
   width: 100%;
 }
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -121,7 +130,23 @@ video {
     to   { opacity: 1; }
 }
 
-@media screen and (max-width: 480px) {
-  img{
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 75%;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header img{
     display:none;
   }
+
+  .content {
+    width: 90%;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
