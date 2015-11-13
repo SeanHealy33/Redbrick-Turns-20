@@ -3,11 +3,16 @@
 
 (def supporting-deails (reagent/atom {
     :title "Time To Have a Birthday Party!"
-    :text "This year marks our 20th birthday. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    :text "Hear ye! Hear ye! Let the calls of \"RESIIIGN\" toll through the lands, for
+          today is a day of celebration! The twentieth anniversary of the honourable
+          Redbrick society has arrived! Over the past twenty years, DCU's Networking
+          Society has been through a lot, and now is the time to remember, and to
+          party! Meet the Redbrick heroes and villains from over the years, and
+          party with the current networking stock; share horror stories, and make
+          fun of the admins who broke everything with the best of them. So dust off
+          your networking goggles, and get ready to see regrettable drunk pictures
+          from the past 20 years! See you on the 9th April 2016, to eat, drink, be
+          merry, and party like it's 1996!"
   }))
 
 (def event-details (reagent/atom {
