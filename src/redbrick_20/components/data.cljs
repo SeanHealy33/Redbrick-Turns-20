@@ -3,11 +3,16 @@
 
 (def supporting-deails (reagent/atom {
     :title "Time To Have a Birthday Party!"
-    :text "This year marks our 20th birthday. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    :text " Hear ye! Hear ye! Let the calls of \"RESIIIGN\" toll through the lands, for
+            today is a day of celebration! The twentieth anniversary of the honourable
+            Redbrick society has arrived! Over the past twenty years, DCU's Networking
+            Society has been through a lot, and now is the time to remember, and to
+            party! Meet the Redbrick heroes and villains from over the years, and
+            party with the current networking stock; share horror stories, and make
+            fun of the admins who broke everything with the best of them. So dust off
+            your networking goggles, and get ready to see regrettable drunk pictures
+            from the past 20 years! See you on the 9th April 2016, to eat, drink, be
+            merry, and party like it's 1996!."
   }))
 
 (def event-details (reagent/atom {
@@ -28,7 +33,7 @@
     society, they were allowed to setup a temporary home for the server in the Computer Applications facility, going online in the
     postgrad area on March 5th, 1996 as dcuns.compapp.dcu.ie. Later, the society received its own subnet and subdomain of dcu.ie
     from the Computer Services Department."
-    :supporting-image "http://www.pixempire.com/images/preview/power-on-computer-icon.jpg"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 1997
@@ -74,8 +79,7 @@
   }
   {
     :year 2002
-    :supporting-data "This entire wiki section just seems like bloat nothing of real society relevance happens or at least that
-                      is what I've gathered from this."
+    :supporting-data "Redbrick gets a new logo."
     :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
@@ -164,9 +168,10 @@
   }
   {
     :year 2015
-    :supporting-data "Redbrick Returns to FOSDEM there was cheers, tears and far far too many beer's.
-                      The admins realized Redbrick isnt as reziliant as once thought. Rob didnt resgin!
-                      TechWeek is held in the mezz, We got Speakers from AOL, Intercom, Google, Amazon and our lovely Associates :)"
+    :supporting-data "Redbrick returns to FOSDEM! There were cheers, tears and far far too many beers.
+                      The admins realised that Redbrick isn't as resilient as once thought. Rob didn't resign!
+                      TechWeek is held in the mezz; we got speakers from AOL, Intercom, Google, Amazon, and
+                      our lovely associates :)"
     :supporting-image "https://pbs.twimg.com/profile_images/378800000547772739/6069389b75cc1ae0d2ab8a0ebac9bec8_400x400.png"
   }
   ])
