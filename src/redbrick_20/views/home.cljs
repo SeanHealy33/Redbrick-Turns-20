@@ -15,8 +15,8 @@
   [:div {:class "video_wrapper mdl-card mdl-shadow--6dp"}
     [:div {:class "padder"}]
       [:div {:class "padder"}]
-    [:h1 {:class "appear mdl-color-text--red-700"} "Redbrick Turns 20!"]
-    [:h3 {:class "appear-slow mdl-color-text--red-700"} "Happy Birthday"]
+    [:h1 {:class "appear mdl-color-text--white"} "Redbrick Turns 20!"]
+    [:h3 {:class "appear-slow mdl-color-text--white"} "Happy Birthday"]
     [:div {:class "padder"}]])
 
 (defn supporting-card []
