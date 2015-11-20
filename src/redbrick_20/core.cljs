@@ -6,7 +6,8 @@
                 [goog.history.EventType :as EventType]
                 [reagent.core :as reagent]
                 [redbrick-20.views.home :as home]
-                [redbrick-20.views.timeline :as timeline]))
+                [redbrick-20.views.timeline :as timeline]
+                [redbrick-20.views.donation :as donation]))
 
 (def app-state (reagent/atom {}))
 
@@ -26,17 +27,17 @@
 
   (defroute "/timeline" []
     (swap! app-state assoc :page :timeline))
+  (defroute "/donate" []
+    (swap! app-state assoc :page :donation))
   (hook-browser-navigation!))
-
-
-(defn hello-world []
-  [home/render-page])
 
 (defmulti current-page #(@app-state :page))
 (defmethod current-page :home []
   [home/render-page])
 (defmethod current-page :timeline []
   [timeline/render-page])
+(defmethod current-page :donation []
+  [donation/render-page])
 (defmethod current-page :default [])
 
 (defn ^:export main []
