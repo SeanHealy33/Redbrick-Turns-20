@@ -22,6 +22,37 @@
   :event-date "9th of April"
   :event-information "TBA"}))
 
+(def donation (reagent/atom {
+  :value 250
+  }))
+
+(def donationGoals (reagent/atom [
+    {
+      :value 100
+      :prev_value 1 ;avoiding div by 0
+      :type "lol"
+      :background-image "Oh Noes"
+    }
+    {
+      :value 200
+      :prev_value 100
+      :type "lol"
+      :background-image "Oh"
+    }
+    {
+      :value 300
+      :prev_value 200
+      :type "lol"
+      :background-image "Oh"
+    }
+    {
+      :value 400
+      :prev_value 300
+      :type "lol"
+      :background-image "Oh"
+    }
+  ]))
+
 
 (def timeline [
   {
@@ -39,13 +70,13 @@
     :year 1997
     :supporting-data "Valentines' Event in The Fleet (Shift a Trinner?).
                       Heres a picture of pooka have fun"
-    :supporting-image "http://www.redbrick.dcu.ie/~wibble/party/pooka.jpg"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 1998
     :supporting-data "Redbrick's machine \"mother\" goes live. Redbrick members are finally allowed to have
                       multiple accounts"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 1999
@@ -54,7 +85,7 @@
                       possible for people to read other member's passwords and committee business. \n
                       Associate membership introduced with CSD's consent.
                       Redbrick's new machine, Enigma, running FreeBSD is launched"
-    :supporting-image "https://raw.githubusercontent.com/factor-io/connector-irc/master/logo.png"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 2000
@@ -64,7 +95,7 @@
                       the same again in the day at rush hour. Redbrick also had a bouncy castle in DCU.
                       In association with Trad Soc we had an event in Whelans.
                       Trad soc, Jilted, Relish, Tea & Sympathy (American band) all played great sets."
-    :supporting-image "http://blogs.exeter.ac.uk/librarynews/files/2013/03/RAG-Logo-Final1.png"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 2001
@@ -75,7 +106,7 @@
                       tutorials are about writing webpages in HTML and using FTP to upload them to
                       redbrick. The third tutorial showed people how to setup Windowmaker and KDE
                       on their Solaris accounts in CA, as well as giving a basic introduction to commandline UNIX. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/f/f4/Rbwiki_RedbrickLogo_logo2.gif"
   }
   {
     :year 2002
@@ -88,7 +119,7 @@
                       Redbricks new server goes live and is named Deathray. The name is from a joke about
                       dimples using Redbrick's money to finance a death ray. or something.
                       Deathray becomes the primary login server, all logins now accepted at login.redbrick.dcu.ie, redbrick.dcu.ie is no more. "
-    :supporting-image "http://heanet.ie/wordpress/wp-content/uploads/2014/10/HEAnet-Logo-2011-blue_text-white_back-Large.png"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2004
@@ -96,7 +127,7 @@
                       Dcu.ie went down due to a serious hardware failure and perhaps
                       because people were constantly hitting the refresh key in the
                       hope that results would be released a day early. "
-    :supporting-image "http://www.maturestudents.ie/img/institutionlogos/dcu.jpg"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2005
@@ -107,7 +138,7 @@
     :year 2006
     :supporting-data "The Redbrick Wiki was defaced by spammers. The wiki was temporarily taken down.
                       Redbrick celebrates its 10th birthday party in Bojangles nightclub, Harcourt st. "
-    :supporting-image "http://cnet4.cbsistatic.com/hub/i/2013/09/09/f927f411-6de9-11e3-913e-14feb5ca9861/0aeb55bb016f3b71f68e52959b1403fc/LulzSecLogo.png"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2007
@@ -124,14 +155,14 @@
                       held in the Helix on Thursday 10th of April. Redbrick Chairperson Andrew Harford wins
                       a First Five award for Best Individual.
                       Redbrick wins Best Society Website of a Large College at the BICS Awards in Dundalk - Best Website in Ireland!"
-    :supporting-image "http://psdfinder.com/wp-content/uploads/trophy-icon1.jpg"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2009
     :supporting-data "RedBrick Twitter is launched to tell people about stuff.
                       DCUfm forget to renew their license. RedBrick pull the stream
                       for legal reasons."
-    :supporting-image "https://g.twimg.com/Twitter_logo_blue.png"
+    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2010
@@ -153,7 +184,7 @@
     :supporting-data "Redbrick go to FOSDEM, valuable lessions on Mutliple campuses and tee-shirts in winter
                       were learned. Redbrick takes applications for this years IrlCPC Programming Competition in UCC.
                       Five teams are formed to attend the event. Redbrick member bunbun passed away"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://pbs.twimg.com/profile_images/1662456750/logo_400x400.png"
   }
   {
     :year 2013
@@ -164,7 +195,7 @@
     :year 2014
     :supporting-data "Redbrick relaunched TechWeek with the support of companys like Google & Amazon.
                       We Join Google at the first Google Open day in their Dublin Ireland Office"
-    :supporting-image "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1000px-Google_2015_logo.svg.png"
+    :supporting-image "https://pbs.twimg.com/profile_images/1662456750/logo_400x400.png"
   }
   {
     :year 2015
@@ -172,6 +203,6 @@
                       The admins realised that Redbrick isn't as resilient as once thought. Rob didn't resign!
                       TechWeek is held in the mezz; we got speakers from AOL, Intercom, Google, Amazon, and
                       our lovely associates :)"
-    :supporting-image "https://pbs.twimg.com/profile_images/378800000547772739/6069389b75cc1ae0d2ab8a0ebac9bec8_400x400.png"
+    :supporting-image "https://pbs.twimg.com/profile_images/1662456750/logo_400x400.png"
   }
   ])
