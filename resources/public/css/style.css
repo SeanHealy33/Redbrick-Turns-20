@@ -49,6 +49,7 @@ header img{
   display: inline-block;
   background-color: #f20808;
   width: 5%;
+  vertical-align: top;
 }
 
 .goal_title {
@@ -60,6 +61,9 @@ header img{
   width: 71%;
 }
 
+.goal_container{
+    padding: 5px;
+}
 .stretch_wrapper_row{
   overflow: hidden;
   position: relative;
@@ -69,6 +73,10 @@ header img{
 
 .header.mdl-layout__header{
   background-color: #d50000;
+}
+
+.donation_ammount{
+  text-align: center;
 }
 
 .mdl-layout__content{

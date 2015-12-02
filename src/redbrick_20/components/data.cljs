@@ -22,10 +22,6 @@
   :event-date "9th of April"
   :event-information "TBA"}))
 
-(def donation (reagent/atom {
-  :value 250
-  }))
-
 (def donationGoals (reagent/atom [
     {
       :value 100
