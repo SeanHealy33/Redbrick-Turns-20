@@ -28,7 +28,7 @@
       [:div {:class "mdl-card__title"}
         [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "Redbrick Through the Years"]]
       (for [year data/timeline]
-        [timeline-row year])]])
+        ^{:key year} [timeline-row year])]])
 
 (defn render-content-wrapper []
   [:div
@@ -43,5 +43,5 @@
       "Redbrick: DCU's Networking Society"
       "Redbrick")]
    [:main {:class "mdl-layout__content"}
-    (render-content-wrapper)
+    [render-content-wrapper]
     [:div {:class "padder"}]]])
