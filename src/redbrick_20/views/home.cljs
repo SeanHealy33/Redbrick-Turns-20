@@ -3,6 +3,7 @@
     (:import goog.History)
     (:require [reagent.core :as reagent]
               [redbrick-20.views.header :as header]
+              [redbrick-20.views.map :as gmaps]
               [redbrick-20.components.data :as data]))
 
 (enable-console-print!)
@@ -31,7 +32,14 @@
     [:div {:class "mdl-card__title"}
       [:h2 {:class "mdl-card__title-text"} (:event-title @data/event-details)]]
     [:div {:class "card-text mdl-card__supporting-text"}
-     [:p (:event-information @data/event-details)]]])
+     [:div {:class "gmaps"}
+      [gmaps/render-map]]
+      [:div {:class "event_info"}
+        [:p {:class "event_location"}
+          (str "Event Location: " (:event-location @data/event-details))]
+        [:p {:class "event_location"}
+          (:event-information @data/event-details)]
+      ]]])
 
 (defn render-content-wrapper []
   [:div

@@ -18,7 +18,7 @@
 (def event-details (reagent/atom {
   :event-title "Event Details"
   :maps-location "TODO"
-  :event-location "TBA"
+  :event-location "Opium Cafe, Dublin"
   :event-date "9th of April"
   :event-information "TBA"}))
 

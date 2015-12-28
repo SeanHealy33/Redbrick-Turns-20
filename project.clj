@@ -34,7 +34,8 @@
               :compiler {:output-to "resources/public/js/compiled/redbrick_20.js"
                          :main redbrick-20.core
                          :optimizations :advanced
-                         :pretty-print false}}]}
+                         :pretty-print false
+                         :externs ["externs.js"]}}]}
 
   :figwheel {
              ;; :http-server-root "public" ;; default and assumes "resources"
