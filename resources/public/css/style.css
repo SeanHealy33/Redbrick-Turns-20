@@ -31,6 +31,18 @@ header img{
   width: 100%;
 }
 
+.event_info{
+  float: right;
+  margin: auto;
+  width: 48%;
+}
+
+.gmaps{
+  width: 50%;
+  margin: auto;
+  float: left;
+}
+
 .value_wrapper{
   padding-left: 1%;
   float: left;
@@ -197,6 +209,16 @@ video.mdl-card {
 @media screen and (max-width: 570px) {
   header img{
     display:none;
+  }
+
+  .gmaps{
+    width: 100%;
+    margin: auto;
+  }
+
+  .event_info{
+    width: 100%;
+    margin: auto;
   }
 
   .content {

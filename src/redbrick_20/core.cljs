@@ -7,7 +7,8 @@
                 [reagent.core :as reagent]
                 [redbrick-20.views.home :as home]
                 [redbrick-20.views.timeline :as timeline]
-                [redbrick-20.views.donation :as donation]))
+                [redbrick-20.views.donation :as donation]
+                [redbrick-20.views.map :as map]))
 
 (def app-state (reagent/atom {}))
 
@@ -29,6 +30,8 @@
     (swap! app-state assoc :page :timeline))
   (defroute "/donate" []
     (swap! app-state assoc :page :donation))
+  (defroute "/map" []
+    (swap! app-state assoc :page :map))
   (hook-browser-navigation!))
 
 (defmulti current-page #(@app-state :page))
@@ -38,6 +41,8 @@
   [timeline/render-page])
 (defmethod current-page :donation []
   [donation/render-page])
+(defmethod current-page :map []
+  [map/render-map])
 (defmethod current-page :default [])
 
 (defn ^:export main []
