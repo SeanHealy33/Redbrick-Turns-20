@@ -64,7 +64,14 @@ header img{
   vertical-align: top;
 }
 
-.goal_title {
+.full-bar{
+  border-bottom-left-radius:0%;
+  border-bottom-right-radius:0%;
+}
+
+.round-bar{
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
 }
 
 .stretch_goal{

@@ -48,9 +48,11 @@
       [:div {:class "ruler"}]
       [:div {:class "text_wrapper"}
         [:p {:class "mdl-card__title-text mdl-color-text--red-900"}(str "€ " (:value goal-row))]]]
-    [:div {:class "progress_bar mdl-color--red-700"
-           :style {:height (display-bar goal-row)
-                   :box-shadow (display-row goal-row)}}]
+    [:div {:class (str "progress_bar mdl-color--red-700 "
+                    (if (= (display-bar goal-row) "100%")
+                      "full-bar"
+                      "round-bar"))
+           :style {:height (display-bar goal-row)}}]
     [:div {:class "stretch_goal"}
       [:div {:class "ruler"}]
       [:div {:class "goal_container"}
