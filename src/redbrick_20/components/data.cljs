@@ -17,8 +17,7 @@
 
 (def event-details (reagent/atom {
   :event-title "Event Details"
-  :maps-location "TODO"
-  :event-location "Opium Cafe, Dublin"
+  :event-location "Opium Cafe, Wexford St, Dublin"
   :event-date "9th of April"
   :event-information "TBA"}))
 
@@ -27,7 +26,7 @@
       :value 100
       :prev_value 1 ;avoiding div by 0
       :type "lol"
-      :background-image "Oh Noes"
+      :background-image "Oh"
     }
     {
       :value 200

@@ -36,10 +36,9 @@
       [gmaps/render-map]]
       [:div {:class "event_info"}
         [:p {:class "event_location"}
-          (str "Event Location: " (:event-location @data/event-details))]
+          [:b "Event Location: "] (:event-location @data/event-details)]
         [:p {:class "event_location"}
-          (:event-information @data/event-details)]
-      ]]])
+          [:b "Date: " ] (:event-date @data/event-details)]]]])
 
 (defn render-content-wrapper []
   [:div
