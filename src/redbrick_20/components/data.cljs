@@ -23,8 +23,14 @@
 
 (def donationGoals (reagent/atom [
     {
-      :value 300
+      :value 0
       :prev_value 1 ;avoiding div by 0
+      :type "Our Thanks :)"
+      :background-image "Oh"
+    }
+    {
+      :value 400
+      :prev_value 0 ;avoiding div by 0
       :type "Balloon Man"
       :background-image "Oh"
     }
