@@ -23,27 +23,33 @@
 
 (def donationGoals (reagent/atom [
     {
-      :value 100
-      :prev_value 1 ;avoiding div by 0
-      :type "lol"
-      :background-image "Oh"
-    }
-    {
-      :value 200
-      :prev_value 100
-      :type "lol"
-      :background-image "Oh"
-    }
-    {
       :value 300
-      :prev_value 200
-      :type "lol"
+      :prev_value 1 ;avoiding div by 0
+      :type "Balloon Man"
       :background-image "Oh"
     }
     {
       :value 400
       :prev_value 300
-      :type "lol"
+      :type "Photo Booth"
+      :background-image "Oh"
+    }
+    {
+      :value 600
+      :prev_value 400
+      :type "Band"
+      :background-image "Oh"
+    }
+    {
+      :value 1000
+      :prev_value 600
+      :type "Free Bar"
+      :background-image "Oh"
+    }
+    {
+      :value 5000
+      :prev_value 1000
+      :type "Lorcan Shaves his Beard"
       :background-image "Oh"
     }
   ]))
