@@ -29,7 +29,7 @@
       :background-image "Oh"
     }
     {
-      :value 400
+      :value 300
       :prev_value 0 ;avoiding div by 0
       :type "Balloon Man"
       :background-image "Oh"
@@ -49,7 +49,7 @@
     {
       :value 1000
       :prev_value 600
-      :type "Free Bar"
+      :type "Free Beer Tokens"
       :background-image "Oh"
     }
     {
