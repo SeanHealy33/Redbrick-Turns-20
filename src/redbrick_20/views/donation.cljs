@@ -27,21 +27,10 @@
 
 (defn display-bar
   [goal-row]
-  (if (< @donation-ammount (:value goal-row)) ;TODO Make this less hideous
-    (if (> @donation-ammount (:prev_value goal-row))
-       (str (* (/ (- @donation-ammount (:prev_value goal-row)) (- (:value goal-row) (:prev_value goal-row))) 100 )"%" )
-       "0%"
-    )
-    "100%"))
-
-(defn display-row
-  [goal-row]
-  (if (< @donation-ammount (:value goal-row)) ;TODO Make this less hideous
-    (if (> @donation-ammount (:prev_value goal-row))
-       "0 7px 2px 0 #ffde00"
-       "0px -2px -2px -5px #ffde00"
-    )
-    " 0 7px 2px 0 #ffde00"))
+  (if (> @donation-ammount (:next_value goal-row))
+    (str "100%")
+    (if (and (< @donation-ammount (:next_value goal-row)) (> @donation-ammount (:value goal-row)))
+       (str (* (/ (- @donation-ammount (:next_value goal-row)) (- (:value goal-row) (:next_value goal-row))) 100 )"%" ))))
 
 (defn donation-card []
   [:div {:class "fill-card mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"}
@@ -83,6 +72,7 @@
       [:div {:class "ruler"}]
       [:div {:class "text_wrapper"}
         [:p {:class "mdl-card__title-text mdl-color-text--red-900"}(str "€ " (:value goal-row))]]]
+        (println (display-bar goal-row))
     [:div {:class (str "progress_bar mdl-color--red-700 "
                     (if (= (display-bar goal-row) "100%")
                       "full-bar"
