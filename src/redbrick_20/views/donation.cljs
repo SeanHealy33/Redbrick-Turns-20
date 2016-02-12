@@ -35,7 +35,7 @@
 (defn donation-card []
   [:div {:class "fill-card mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"}
     [:div {:class "mdl-card__title"}
-      [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "How Much would you like to give to us?"]]
+      [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "How much would you like to give to us?"]]
 
     [:label
       [:input {:type :radio :name "userAmmount" :value "10.00"
@@ -51,7 +51,7 @@
         :on-change  #(reset! user-donation-opt "100.00")}] "100.00"]
     [:label
       [:input {:type :radio :name "userAmmount" :value "0"
-        :on-change  #(reset! user-donation-opt "0")}] "Custom Ammount"]
+        :on-change  #(reset! user-donation-opt "0")}] "Custom Amount"]
 
     [:div
       [:form {:action "https://www.paypal.com/cgi-bin/webscr" :method "post" :target "_top"}
@@ -88,7 +88,7 @@
   [:div {:class "redbrick_donation"}
     [:div {:class "fill-card mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"}
       [:div {:class "mdl-card__title"}
-        [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "Donate to Our event!"]]
+        [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "Donate to Our Event!"]]
       [:div {:class "donation_wrapper"}
         [:h2 {:class "donation_ammount"} (str "So far we have raised €" @donation-ammount)]]
           (doall

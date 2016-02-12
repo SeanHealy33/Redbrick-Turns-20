@@ -26,37 +26,31 @@
       :value 0
       :next_value 400 ;avoiding div by 0
       :type "Our Thanks :)"
-      :background-image "Oh"
     }
     {
       :value 400
       :next_value 500 ;avoiding div by 0
       :type "Balloon Man"
-      :background-image "Oh"
     }
     {
       :value 500
       :next_value 600
       :type "Photo Booth"
-      :background-image "Oh"
     }
     {
       :value 600
       :next_value 1000
       :type "Band"
-      :background-image "Oh"
     }
     {
       :value 1000
       :next_value 5000
-      :type "Free Bar"
-      :background-image "Oh"
+      :type "Free Beer Tokens"
     }
     {
       :value 5000
       :next_value 10000
       :type "Lorcan Shaves his Beard"
-      :background-image "Oh"
     }
   ]))
 
