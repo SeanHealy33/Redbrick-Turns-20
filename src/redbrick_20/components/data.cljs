@@ -34,13 +34,8 @@
     }
     {
       :value 500
-      :next_value 600
-      :type "Photo Booth"
-    }
-    {
-      :value 600
       :next_value 1000
-      :type "Band"
+      :type "Photo Booth"
     }
     {
       :value 1000
@@ -50,7 +45,7 @@
     {
       :value 5000
       :next_value 10000
-      :type "Lorcan Shaves his Beard"
+      :type "zergless shaves his Beard"
     }
   ]))
 

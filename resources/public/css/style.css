@@ -80,6 +80,30 @@ header img{
   width: 71%;
 }
 
+.input{
+    width: 20%;
+    margin: 2%;
+    display: inline;
+}
+
+.form_input{
+  width: 10%;
+  padding: 5%;
+}
+
+form{
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.center_form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .goal_container{
     padding: 5px;
 }

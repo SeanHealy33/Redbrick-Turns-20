@@ -30,41 +30,46 @@
   (if (> @donation-ammount (:next_value goal-row))
     (str "100%")
     (if (and (< @donation-ammount (:next_value goal-row)) (> @donation-ammount (:value goal-row)))
-       (str (* (/ (- @donation-ammount (:next_value goal-row)) (- (:value goal-row) (:next_value goal-row))) 100 )"%" ))))
+       (do
+         (str (* (/ (- @donation-ammount (:value goal-row)) (- (:next_value goal-row) (:value goal-row))) 100 )"%" )))))
 
 (defn donation-card []
   [:div {:class "fill-card mdl-card mdl-shadow--2dp mdl-card mdl-shadow--6dp"}
     [:div {:class "mdl-card__title"}
       [:h2 {:class "mdl-card__title-text mdl-color-text--red-900"} "How much would you like to give to us?"]]
+    [:div {:class "card-text mdl-card__supporting-text"}
+      [:p "To Make the best birthday bash ever Redbrick needs your help! Would you like to see $stretch_goal at our Birthday party,
+        We would! Did we forget to mention that you'll get some free swag from us if you donate over 15 euro?
+        We've set up a paypal for the event if you are interested"]
 
-    [:label
-      [:input {:type :radio :name "userAmmount" :value "10.00"
-        :on-change  #(reset! user-donation-opt "10.00")}] "10.00"]
-    [:label
-      [:input {:type :radio :name "userAmmount" :value "25.00"
-        :on-change  #(reset! user-donation-opt "25.00")}] "25.00"]
-    [:label
-      [:input {:type :radio :name "userAmmount" :value "50.00"
-        :on-change  #(reset! user-donation-opt "50.00")}] "50.00"]
-    [:label
-      [:input {:type :radio :name "userAmmount" :value "100.00"
-        :on-change  #(reset! user-donation-opt "100.00")}] "100.00"]
-    [:label
-      [:input {:type :radio :name "userAmmount" :value "0"
-        :on-change  #(reset! user-donation-opt "0")}] "Custom Amount"]
-
-    [:div
-      [:form {:action "https://www.paypal.com/cgi-bin/webscr" :method "post" :target "_top"}
-      [:input {:type "hidden" :name "cmd" :value "_donations"}]
-      [:input {:type "hidden" :name "business" :value "birthday@redbrick.dcu.ie"}]
-      [:input {:type "hidden" :name "lc" :value "IE"}]
-      [:input {:type "hidden" :name "item_name" :value "Redbrick"}]
-      [:input {:type "hidden" :name "amount" :value @user-donation-opt}]
-      [:input {:type "hidden" :name "currency_code" :value "EUR"}]
-      [:input {:type "hidden" :name "bn" :value "PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"}]
-      [:input {:type "image" :src "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-               :border "0" :name "submit" :alt "PayPal - The safer, easier way to pay online!"}]
-      [:img {:alt "" :border "0" :src "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" :width "1" :height "1"}]]]])
+    [:div {:class "center_form"}
+      [:label {:class "form_input"}
+        [:input {:type :radio :name "userAmmount" :value "10.00"
+          :on-change  #(reset! user-donation-opt "10.00")}] "€10.00"]
+      [:label {:class "form_input"}
+        [:input {:type :radio :name "userAmmount" :value "25.00"
+          :on-change  #(reset! user-donation-opt "25.00")}] "€25.00"]
+      [:label {:class "form_input"}
+        [:input {:type :radio :name "userAmmount" :value "50.00"
+          :on-change  #(reset! user-donation-opt "50.00")}] "€50.00"]
+      [:label {:class "form_input"}
+        [:input {:type :radio :name "userAmmount" :value "100.00"
+          :on-change  #(reset! user-donation-opt "100.00")}] "€100.00"]
+      [:label {:class "form_input"}
+        [:input {:type :radio :name "userAmmount" :value "0"
+          :on-change  #(reset! user-donation-opt "0")}] "Custom Amount"]
+        [:div {:class "padder"}]
+        [:form {:action "https://www.paypal.com/cgi-bin/webscr" :method "post" :target "_top"}
+          [:input {:type "hidden" :name "cmd" :value "_donations"}]
+          [:input {:type "hidden" :name "business" :value "birthday@redbrick.dcu.ie"}]
+          [:input {:type "hidden" :name "lc" :value "IE"}]
+          [:input {:type "hidden" :name "item_name" :value "Redbrick"}]
+          [:input {:type "hidden" :name "amount" :value @user-donation-opt}]
+          [:input {:type "hidden" :name "currency_code" :value "EUR"}]
+          [:input {:type "hidden" :name "bn" :value "PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"}]
+          [:input {:type "image" :src "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                   :border "0" :name "submit" :alt "PayPal - The safer, easier way to pay online!"}]
+          [:img {:alt "" :border "0" :src "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" :width "1" :height "1"}]]]]])
 
 (defn donation_row [goal-row]
   [:div {:class "stretch_wrapper_row"}
@@ -72,7 +77,6 @@
       [:div {:class "ruler"}]
       [:div {:class "text_wrapper"}
         [:p {:class "mdl-card__title-text mdl-color-text--red-900"}(str "€ " (:value goal-row))]]]
-        (println (display-bar goal-row))
     [:div {:class (str "progress_bar mdl-color--red-700 "
                     (if (= (display-bar goal-row) "100%")
                       "full-bar"
