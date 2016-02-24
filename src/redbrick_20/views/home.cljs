@@ -12,10 +12,9 @@
 (def browser-width (reagent/atom js/window.innerWidth))
 
 (defn video-card []
-  (println @browser-width)
   [:div {:class "video_wrapper mdl-card mdl-shadow--6dp"}
     [:div {:class "padder"}]
-      [:div {:class "padder"}]
+    [:div {:class "padder"}]
     [:h1 {:class "appear mdl-color-text--white"} "Redbrick Turns 20!"]
     [:h3 {:class "appear-slow mdl-color-text--white"} "Happy Birthday"]
     [:div {:class "padder"}]])
