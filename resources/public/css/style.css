@@ -26,6 +26,10 @@ header img{
   border-width: 1px;
 }
 
+.card-a-tag {
+  text-decoration: underline;
+}
+
 .stretch_wrapper{
   display: block;
   width: 100%;
