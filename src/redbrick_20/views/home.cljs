@@ -16,7 +16,11 @@
     [:div {:class "padder"}]
     [:div {:class "padder"}]
     [:h1 {:class "appear mdl-color-text--white"} "Redbrick Turns 20!"]
-    [:h3 {:class "appear-slow mdl-color-text--white"} "Happy Birthday"]
+    [:h3 {:class "appear-slow"}
+      [:a {:class "mdl-color-text--white card-a-tag"
+           :href "https://ti.to/Redbrick-DCU/redbricks-20th-birthday"}
+           "Grab Tickets, They're Free!"]]
+
     [:div {:class "padder"}]])
 
 (defn supporting-card []
@@ -37,7 +41,10 @@
         [:p {:class "event_location"}
           [:b "Event Location: "] (:event-location @data/event-details)]
         [:p {:class "event_location"}
-          [:b "Date: " ] (:event-date @data/event-details)]]]])
+          [:b "Date: " ] (:event-date @data/event-details)]
+        [:b "Tickets: " ]
+          [:a {:class "card-a-tag mdl-card__supporting-text"
+            :href (:event-tickets @data/event-details)} "Get Tickets From Tito"]]]])
 
 (defn render-content-wrapper []
   [:div
