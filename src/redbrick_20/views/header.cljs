@@ -11,5 +11,4 @@
         title]]
         [:div {:class "mdl-layout-spacer"}]
          [:nav {:class "mdl-navigation"}
-           [:a {:class "mdl-navigation__link" :href "#/timeline"} "Timeline"]
-           [:a {:class "mdl-navigation__link" :href "#/donate"} "Donate"]]]])
+           [:a {:class "mdl-navigation__link" :href "#/timeline"} "Timeline"]]]])
