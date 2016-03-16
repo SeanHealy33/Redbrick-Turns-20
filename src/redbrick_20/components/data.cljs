@@ -67,13 +67,13 @@
     :year 1997
     :supporting-data "Valentines' Event in The Fleet (Shift a Trinner?).
                       Heres a picture of pooka have fun"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 1998
     :supporting-data "Redbrick's machine \"mother\" goes live. Redbrick members are finally allowed to have
                       multiple accounts"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 1999
@@ -82,7 +82,7 @@
                       possible for people to read other member's passwords and committee business. \n
                       Associate membership introduced with CSD's consent.
                       Redbrick's new machine, Enigma, running FreeBSD is launched"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 2000
@@ -92,7 +92,7 @@
                       the same again in the day at rush hour. Redbrick also had a bouncy castle in DCU.
                       In association with Trad Soc we had an event in Whelans.
                       Trad soc, Jilted, Relish, Tea & Sympathy (American band) all played great sets."
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
     :year 2001
@@ -103,12 +103,12 @@
                       tutorials are about writing webpages in HTML and using FTP to upload them to
                       redbrick. The third tutorial showed people how to setup Windowmaker and KDE
                       on their Solaris accounts in CA, as well as giving a basic introduction to commandline UNIX. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/f/f4/Rbwiki_RedbrickLogo_logo2.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/f/f4/Rbwiki_RedbrickLogo_logo2.gif"
   }
   {
     :year 2002
     :supporting-data "Redbrick gets a new logo."
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2003
@@ -116,7 +116,7 @@
                       Redbricks new server goes live and is named Deathray. The name is from a joke about
                       dimples using Redbrick's money to finance a death ray. or something.
                       Deathray becomes the primary login server, all logins now accepted at login.redbrick.dcu.ie, redbrick.dcu.ie is no more. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2004
@@ -124,18 +124,18 @@
                       Dcu.ie went down due to a serious hardware failure and perhaps
                       because people were constantly hitting the refresh key in the
                       hope that results would be released a day early. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2005
     :supporting-data "There is literally nothing of relevance on the wiki for this year :(."
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2006
     :supporting-data "The Redbrick Wiki was defaced by spammers. The wiki was temporarily taken down.
                       Redbrick celebrates its 10th birthday party in Bojangles nightclub, Harcourt st. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2007
@@ -144,7 +144,7 @@
                       The new Encom server goes through about a dozen names, before finally settling on
                       minerva.redbrick.dcu.ie, which apparently is \"horribly lame\".
                       /webtree is moved to minerva. No one notices, or is told. "
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2008
@@ -152,21 +152,21 @@
                       held in the Helix on Thursday 10th of April. Redbrick Chairperson Andrew Harford wins
                       a First Five award for Best Individual.
                       Redbrick wins Best Society Website of a Large College at the BICS Awards in Dundalk - Best Website in Ireland!"
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2009
     :supporting-data "RedBrick Twitter is launched to tell people about stuff.
                       DCUfm forget to renew their license. RedBrick pull the stream
                       for legal reasons."
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2010
     :supporting-data "Servers are taken offline to prepare for the move to our new server room. Minerva, Morpheus
                       and Worf are moved to ISS's server room in the library to maintain services during the downtime.
                       The brick is \"accidentally\" destroyed in the process. Meeting room 3 becomes Redbrick storage."
-    :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
+    :supporting-image "https://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
     :year 2011
@@ -186,7 +186,7 @@
   {
     :year 2013
     :supporting-data "The year space forgot the space #NeverForget :("
-    :supporting-image "http://www.redbrick.dcu.ie/includes/images/logo.png"
+    :supporting-image "https://www.redbrick.dcu.ie/includes/images/logo.png"
   }
   {
     :year 2014
