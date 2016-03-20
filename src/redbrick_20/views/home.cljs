@@ -41,7 +41,7 @@
         [:p {:class "event_location"}
           [:b "Event Location: "] (:event-location @data/event-details)]
         [:p {:class "event_location"}
-          [:b "Date: " ] (:event-date @data/event-details)]
+          [:b "Date: " ] (str (:event-date @data/event-details) ": " (:event-information @data/event-details))]
         [:b "Tickets: " ]
           [:a {:class "card-a-tag mdl-card__supporting-text"
             :href (:event-tickets @data/event-details)} "Get Tickets From Tito"]]]])
