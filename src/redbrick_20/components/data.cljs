@@ -22,35 +22,6 @@
   :event-date "9th of April"
   :event-information "TBA"}))
 
-(def donationGoals (reagent/atom [
-    {
-      :value 0
-      :next_value 400 ;avoiding div by 0
-      :type "Our Thanks :)"
-    }
-    {
-      :value 400
-      :next_value 500 ;avoiding div by 0
-      :type "Balloon Man"
-    }
-    {
-      :value 500
-      :next_value 1000
-      :type "Photo Booth"
-    }
-    {
-      :value 1000
-      :next_value 5000
-      :type "Free Beer Tokens"
-    }
-    {
-      :value 5000
-      :next_value 10000
-      :type "zergless shaves his Beard"
-    }
-  ]))
-
-
 (def timeline [
   {
     :year 1996
@@ -65,8 +36,7 @@
   }
   {
     :year 1997
-    :supporting-data "Valentines' Event in The Fleet (Shift a Trinner?).
-                      Heres a picture of pooka have fun"
+    :supporting-data "Valentines' Event in The Fleet (Shift a Trinner?)."
     :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/9/91/Rbwiki_RedbrickLogo_tiny_logo.gif"
   }
   {
@@ -86,7 +56,7 @@
   }
   {
     :year 2000
-    :supporting-data "Rag Week. Redbrick, the SU, and some other people (mostly redbrick though ;o))
+    :supporting-data "Rag, Redbrick, the SU, and some other people (mostly redbrick though ;o))
                       turned out on a _very_ cold Monday morning to collect for the Irish Cancer Society on
                       the Ballymun and Swords Roads (at the junctions with Collins Avenue). Then they did
                       the same again in the day at rush hour. Redbrick also had a bouncy castle in DCU.
@@ -115,7 +85,8 @@
     :supporting-data "Redbrick gets donated two Alpha servers. One from HEAnet and the other from DCU CSD.
                       Redbricks new server goes live and is named Deathray. The name is from a joke about
                       dimples using Redbrick's money to finance a death ray. or something.
-                      Deathray becomes the primary login server, all logins now accepted at login.redbrick.dcu.ie, redbrick.dcu.ie is no more. "
+                      Deathray becomes the primary login server, all logins now accepted at login.redbrick.dcu.ie,
+                      redbrick.dcu.ie is no more. "
     :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
@@ -128,7 +99,7 @@
   }
   {
     :year 2005
-    :supporting-data "There is literally nothing of relevance on the wiki for this year :(."
+    :supporting-data "This was the first year Redbrick went to TechWeek."
     :supporting-image "http://wiki.redbrick.dcu.ie/mw/images/2/29/Rbwiki_RedbrickLogo_logo2-rb.gif"
   }
   {
@@ -178,8 +149,9 @@
   }
   {
     :year 2012
-    :supporting-data "Redbrick go to FOSDEM, valuable lessions on Mutliple campuses and tee-shirts in winter
-                      were learned. Redbrick takes applications for this years IrlCPC Programming Competition in UCC.
+    :supporting-data "Redbrick go to FOSDEM, We Learn ULB has more than one Campus.
+                      Far too many people learn that winter in Brussles is very cold and Tee-Shirts are not good winter wear.
+                      Redbrick takes applications for this years IrlCPC Programming Competition in UCC.
                       Five teams are formed to attend the event. Redbrick member bunbun passed away"
     :supporting-image "https://pbs.twimg.com/profile_images/1662456750/logo_400x400.png"
   }
@@ -190,7 +162,7 @@
   }
   {
     :year 2014
-    :supporting-data "Redbrick relaunched TechWeek with the support of companys like Google & Amazon.
+    :supporting-data "Redbrick relaunched TechWeek with the support of companies like Google & Amazon.
                       We Join Google at the first Google Open day in their Dublin Ireland Office"
     :supporting-image "https://pbs.twimg.com/profile_images/1662456750/logo_400x400.png"
   }
